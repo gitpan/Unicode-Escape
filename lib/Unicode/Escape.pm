@@ -10,7 +10,7 @@ use Encode;
 
 use vars qw( $VERSION @ISA @EXPORT_OK );
 
-$VERSION = '0.0.1';
+$VERSION = '0.0.2';
 
 @ISA = qw(Exporter);
 
@@ -122,8 +122,8 @@ This document describes Unicode::Escape version 0.0.1
 
     # case 3
     use Unicode::Escape;
-	my $escaper = Unicode::Escape->new($str, 'shiftjis'); # $str contains charactor that is not ASCII. $str is encoded by shiftjis.(default is utf8)
-	my $escaped = $escaper->escape;
+    my $escaper = Unicode::Escape->new($str, 'shiftjis'); # $str contains charactor that is not ASCII. $str is encoded by shiftjis.(default is utf8)
+    my $escaped = $escaper->escape;
 
     # case 4
     use Unicode::Escape;
@@ -133,8 +133,8 @@ This document describes Unicode::Escape version 0.0.1
 
 =head1 DESCRIPTION
 
-    Escape and unescape Unicode characters other than ASCII.
-    When the server response is javascript code, it is convenient. 
+Escape and unescape Unicode characters other than ASCII.
+When the server response is javascript code, it is convenient. 
 
 =head1 METHODS 
 
@@ -183,7 +183,7 @@ For instance, 'utf8', 'shiftjis', and 'euc-jp', etc. (See L<Encode>)
 
 =head1 SEE ALSO
 
-L<Template>, L<Encode>
+L<Unicode::String>, L<Encode>
 
 =head1 INCOMPATIBILITIES
 

@@ -9,7 +9,8 @@ my $builder = Module::Build->new(
     dist_version_from   => 'lib/Unicode/Escape.pm',
     requires => {
         'Test::More' => 0,
-        'version'    => 0,
+        'Encode' => 0,
+        'Unicode::String' => 0,
     },
     add_to_cleanup      => [ 'Unicode-Escape-*' ],
 );
